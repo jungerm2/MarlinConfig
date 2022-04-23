@@ -69,7 +69,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(Sacha Jungerman - 03/29/22, Prusa i3)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Sacha Jungerman - 04/23/22, Prusa i3)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -601,9 +601,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
     // Tuned PID values:
-    #define DEFAULT_Kp 51.47
-    #define DEFAULT_Ki 6.83
-    #define DEFAULT_Kd 96.98
+    #define DEFAULT_Kp 45.48
+    #define DEFAULT_Ki 4.70
+    #define DEFAULT_Kd 109.91
   #endif
 #endif // PIDTEMP
 
@@ -1198,7 +1198,7 @@
  */
 #define NOZZLE_TO_PROBE_OFFSET_X 31
 #define NOZZLE_TO_PROBE_OFFSET_Y 18
-#define NOZZLE_TO_PROBE_OFFSET_Z -1.7   // TODO: Z-OFFSET HERE! (Negative because probe too high)
+#define NOZZLE_TO_PROBE_OFFSET_Z -1.3   // TODO: Z-OFFSET HERE! (Negative because probe too high)
 #define NOZZLE_TO_PROBE_OFFSET {NOZZLE_TO_PROBE_OFFSET_X, NOZZLE_TO_PROBE_OFFSET_Y, NOZZLE_TO_PROBE_OFFSET_Z}
 
 // Most probes should stay away from the edges of the bed, but
